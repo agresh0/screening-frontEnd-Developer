@@ -1,0 +1,340 @@
+/* Global Styles */
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.page-container {
+  width: 340.73px;
+  padding-top: 100px;
+}
+
+/* Header Styles */
+.line-container {
+  display: flex;
+}
+
+.horizontal-line {
+  flex-grow: 1;
+  border: none;
+  max-width: 94px;
+  border-top: 2px solid #C8C8C8;
+}
+
+/* Style for the text */
+@font-face {
+  font-family: 'Metropolis';
+  src: url('../fonts/custom/metropolis.regular.otf') format('opentype');
+}
+
+/* Text Styles */
+.text {
+  font-family: 'Metropolis';
+  font-size: 18.08px;
+  font-weight: 500;
+  line-height: 18.08px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0 10px;
+  color: #007F61;
+}
+
+/* Body Container Styles */
+.body-container {
+  margin-top: 10px;
+}
+
+/* Pair Form Styles */
+.pair-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  padding-left: 18.46px;
+  padding-right: 18.46px;
+  height: 74.11px;
+}
+
+/* Pair Content Styles */
+.pair-content {
+  display: flex;
+}
+
+/* Pair Section Styles */
+.pair-section {
+  margin-top: 15px;
+  border: 1px solid #C8C8C8;
+  border-radius: 4px;
+  height: 74.11px;
+  overflow: hidden;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Pair Item Styles */
+.pair-item {
+  display: flex;
+  align-items: center;
+  font-family: 'Metropolis';
+  font-weight: 400;
+  font-size: 14.46px;
+}
+
+/* Pair Description Styles */
+.pair-description {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Metropolis';
+  font-weight: 500;
+  size: 14.46px;
+  margin-left: 8px;
+}
+
+/* Pair Offer Styles */
+.pair-offer {
+  margin-left: 8px;
+  font-family: 'Metropolis';
+  font-weight: 400;
+  font-size: 14.46px;
+}
+
+/* Pair Footer Styles */
+.pair-footer {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+}
+
+/* Shipping Day Styles */
+.shipping-day {
+  flex: 1;
+  color: #007F61;
+  opacity: 60%;
+  size: 14px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Spacer Styles */
+.spacer {
+  flex: 1;
+}
+
+/* Total Price Styles */
+.total-price {
+  flex-shrink: 0;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+/* CTA Button Styles */
+.cta-button {
+  display: inline-block;
+  background-color: #007F61;
+  padding: 0;
+  width: 341px;
+  height: 48px;
+  border-radius: 4px 4px 4px 0;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.cta-button button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  line-height: 48px;
+  text-align: center;
+  width: 100%;
+}
+
+.cta-button button::before {
+  content: '+';
+  margin-right: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
+.cta-button button:hover {
+  background-color: #005843;
+  /* Change the background color on hover */
+}
+
+/* Credit Section Styles */
+.credit-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: 'inter';
+}
+
+.credit-section {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.credit-section i {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  color: black;
+}
+
+.pair-offer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.offer-text {
+  font-size: 14.65px;
+  font-family: 'inter';
+  font-weight: 600;
+  color: #007F61;
+}
+
+/* Clicked Pair Section Styles */
+.pair-section.clicked {
+  background-color: #F4FBF9;
+  height: auto;
+  transition: background-color 0.3s ease-in-out, height 0.3s ease-in-out; 
+}
+
+/* Hide clicked-content by default */
+.clicked-content {
+  margin-bottom: 30px;
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+
+
+/* Pair Label Styles */
+
+.pair-label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+}
+
+.pair-label:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #007F61;
+  /* Set your desired color */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+/* Pair Radio Styles */
+
+.pair-radio:checked+.pair-label:after {
+  opacity: 1;
+}
+
+/* Pair Radio Styles */
+
+.pair-radio {
+  accent-color: #007F61;
+}
+
+/* Dropdown Container Styles */
+.dropdown-container {
+  display: inline-block;
+  margin-left: 4px;
+  width: 80px;
+  vertical-align: top;
+}
+
+/* Dropdown Label Styles */
+.dropdown-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'inter';
+  font-weight: 400;
+  font-size: 9.94px;
+}
+
+/* Dropdown Select Styles */
+.dropdown-container select {
+  padding: 5px;
+  font-family: 'inter';
+  font-weight: 400;
+  font-size: 10.85px;
+  border-radius: 2px;
+  background-color: white;
+  border: 1px solid #D9D9D9;
+}
+
+/* Dropdown SiNo Styles */
+.dropdown-siNo {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 9.04px;
+  font-family: 'inter';
+  margin-right: 5px;
+  margin-left: 16px;
+  margin-top: 20px;
+  line-height: 22px;
+  /* Adjust as needed for vertical alignment */
+}
+
+/* Size Dropdown Styles */
+.size-dropdown {
+  width: 65.98px;
+}
+
+/* Color Dropdown Styles */
+.color-dropdown {
+  width: 72.3px;
+}
+
+/* Pair Price Offer Styles */
+.pair-price-offer {
+  justify-content: flex-end;
+}
+
+.pair-price-cutoff {
+  font-size: 9.94px;
+  /* Reduce font size */
+  position: relative;
+  font-weight: 400;
+  font-family: 'inter';
+  color: #9F9F9F;
+  margin-left: 7px;
+}
+
+/* Pair Price Cutoff Styles */
+.pair-price-cutoff::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  border-top: 1px solid #C8C8C8;
+  /* Add the line on top */
+}
+
+/* Pair Price Styles */
+.pair-price {
+  font-size: 18.08px;
+}
